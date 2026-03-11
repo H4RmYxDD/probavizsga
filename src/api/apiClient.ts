@@ -1,4 +1,4 @@
-import type { User } from "@sentry/react";
+import type { User } from "../types/User";
 import axios from "axios";
 
 export const baseURL = "http://localhost:8001/api";
