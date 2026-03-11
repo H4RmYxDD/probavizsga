@@ -9,6 +9,7 @@ import EditPizza from "./pages/EditPizza";
 import OnePizza from "./pages/OnePizza";
 import NewPizza from "./pages/NewPizza";
 import * as Sentry from "@sentry/react";
+import Cart from "./pages/Cart";
 
 Sentry.init({
   dsn: "https://dcac6a5b4d95c2f8683e70a5466d153c@o4510912042893312.ingest.de.sentry.io/4510912049315920",
@@ -25,6 +26,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/new-pizza" element={<NewPizza />} />
         <Route path="/pizza/:id" element={<OnePizza />} />
         <Route path="/edit/:id" element={<EditPizza />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>

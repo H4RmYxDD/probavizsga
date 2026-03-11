@@ -16,7 +16,7 @@ import { useNavigate } from "react-router-dom";
 
 const AllPizza = () => {
   const [pizzak, setPizzak] = useState<Array<Pizza>>([]);
-  const [cart, setCart] = useState<Array<Number>>(
+  const [cart, setCart] = useState<Array<number>>(
     JSON.parse(localStorage.getItem("cart") ?? "[]"),
   );
   const navigate = useNavigate();
